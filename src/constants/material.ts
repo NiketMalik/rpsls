@@ -1,0 +1,7 @@
+export enum MATERIAL_TYPES {
+  ROCK = "ROCK",
+  PAPER = "PAPER",
+  SCISSOR = "SCISSOR",
+  LIZARD = "LIZARD",
+  SPOCK = "SPOCK",
+}

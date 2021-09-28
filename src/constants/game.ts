@@ -1,0 +1,9 @@
+export enum WIN_OUTCOME_TYPES {
+  CURRENT = "CURRENT",
+  OPPONENT = "OPPONENT",
+  DRAW = "DRAW",
+}
+
+export enum OPPONENT_TYPES {
+  COMPUTER = "COMPUTER",
+}

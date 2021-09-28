@@ -1,0 +1,143 @@
+import React from "react";
+
+import { useBoardActions } from "./actions/useBoardActions";
+import { useMediaQuery } from "react-responsive";
+
+import { getResultText } from "utils/game";
+
+import { Row, Col } from "react-bootstrap";
+import { AnimatePresence, motion } from "framer-motion";
+import { Material, DEFAULT_RADIUS } from "components/material";
+import { MaterialSelector } from "./components/materialSelector";
+
+import { BoardContainer } from "./styles";
+
+const AnimatedRow = motion(Row),
+  AnimatedCol = motion(Col);
+
+export const Board = () => {
+  const {
+    currentPlayerMaterial,
+    opponentPlayerMaterial,
+    isCurrentPlayerHighlited,
+    isOpponentPlayerHighlited,
+    currentRoundResult,
+    requestRematch,
+    onCurrentPlayerMaterialSelect,
+  } = useBoardActions();
+
+  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 767px)" });
+
+  const materialRadius = isTabletOrMobile
+    ? DEFAULT_RADIUS * 0.5
+    : DEFAULT_RADIUS;
+
+  return (
+    <BoardContainer fluid className="p-5 mt-md-4">
+      <Row className="row flex-grow-1 align-items-center">
+        <Col md={12}>
+          <AnimatePresence exitBeforeEnter>
+            {currentPlayerMaterial ? (
+              <AnimatedRow
+                key="play"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                className="px-md-5"
+              >
+                <AnimatedCol
+                  md={6}
+                  className="d-flex align-items-center justify-content-center mt-5 mt-md-0"
+                  initial={{ scale: 0 }}
+                  animate={{ scale: 1 }}
+                  exit={{ scale: 0 }}
+                >
+                  <Material
+                    type={currentPlayerMaterial}
+                    radius={materialRadius * 1.25}
+                    isHighlited={isCurrentPlayerHighlited}
+                    isDisabled={!!currentRoundResult}
+                  />
+                </AnimatedCol>
+                {currentPlayerMaterial && (
+                  <AnimatedCol
+                    md={6}
+                    className="d-flex align-items-center justify-content-center mt-5 mt-md-0"
+                    initial={{ scale: 0 }}
+                    animate={{ scale: 1 }}
+                    exit={{ scale: 0 }}
+                  >
+                    <Material
+                      type={opponentPlayerMaterial}
+                      radius={materialRadius * 1.25}
+                      isHighlited={isOpponentPlayerHighlited}
+                      isDisabled={!!currentRoundResult}
+                    />
+                  </AnimatedCol>
+                )}
+              </AnimatedRow>
+            ) : (
+              <AnimatedRow
+                key="material-selector"
+                initial={{ scale: 0 }}
+                animate={{ scale: 1 }}
+                exit={{ scale: 0 }}
+                className="justify-content-evenly"
+                layout
+              >
+                <MaterialSelector
+                  isExpanded={!currentPlayerMaterial}
+                  radius={materialRadius}
+                  onSelect={onCurrentPlayerMaterialSelect}
+                />
+              </AnimatedRow>
+            )}
+          </AnimatePresence>
+        </Col>
+      </Row>
+      <div className="row py-4">
+        {currentRoundResult ? (
+          <div className="col-md-12 d-flex align-items-center justify-content-center">
+            <div className="row">
+              <div className="col-md-12 text-center">
+                <p className="display-5 my-2">
+                  {getResultText(currentRoundResult)}
+                </p>
+              </div>
+              <AnimatePresence>
+                <motion.div
+                  className="col-md-12 text-center"
+                  initial={{ scale: 0 }}
+                  animate={{ scale: 1 }}
+                  transition={{ delay: 0.25, type: "spring", duration: 0.25 }}
+                  exit={{
+                    scale: 0,
+                  }}
+                >
+                  <button className="fs-5" onClick={requestRematch}>
+                    Rematch?
+                  </button>
+                </motion.div>
+              </AnimatePresence>
+            </div>
+          </div>
+        ) : currentPlayerMaterial ? (
+          <>
+            <div className="col-md-6 d-flex align-items-center justify-content-center">
+              <p className="display-5 my-2">Your move</p>
+            </div>
+            <div className="col-md-6 d-flex align-items-center justify-content-center">
+              <p className="display-5 my-2">
+                {opponentPlayerMaterial ? "Opponent's move" : "waiting..."}
+              </p>
+            </div>
+          </>
+        ) : (
+          <div className="col-md-12 d-flex align-items-center justify-content-center">
+            <p className="display-5 my-2">Your turn</p>
+          </div>
+        )}
+      </div>
+    </BoardContainer>
+  );
+};
