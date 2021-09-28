@@ -6,14 +6,26 @@ import { useMediaQuery } from "react-responsive";
 import { getResultText } from "utils/game";
 
 import { Row, Col } from "react-bootstrap";
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence, m } from "framer-motion";
 import { Material, DEFAULT_RADIUS } from "components/material";
 import { MaterialSelector } from "./components/materialSelector";
 
 import { BoardContainer } from "./styles";
 
-const AnimatedRow = motion(Row),
-  AnimatedCol = motion(Col);
+const AnimatedRow = m(Row),
+  AnimatedCol = m(Col);
+
+const OPACITY_ANIMATION_PROPS = {
+  initial: { opacity: 0 },
+  animate: { opacity: 1 },
+  exit: { opacity: 0 },
+};
+
+const SCALE_ANIMATION_PROPS = {
+  initial: { scale: 0 },
+  animate: { scale: 1 },
+  exit: { scale: 0 },
+};
 
 export const Board = () => {
   const {
@@ -40,17 +52,13 @@ export const Board = () => {
             {currentPlayerMaterial ? (
               <AnimatedRow
                 key="play"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
                 className="px-md-5"
+                {...OPACITY_ANIMATION_PROPS}
               >
                 <AnimatedCol
                   md={6}
                   className="d-flex align-items-center justify-content-center mt-5 mt-md-0"
-                  initial={{ scale: 0 }}
-                  animate={{ scale: 1 }}
-                  exit={{ scale: 0 }}
+                  {...SCALE_ANIMATION_PROPS}
                 >
                   <Material
                     type={currentPlayerMaterial}
@@ -63,9 +71,7 @@ export const Board = () => {
                   <AnimatedCol
                     md={6}
                     className="d-flex align-items-center justify-content-center mt-5 mt-md-0"
-                    initial={{ scale: 0 }}
-                    animate={{ scale: 1 }}
-                    exit={{ scale: 0 }}
+                    {...SCALE_ANIMATION_PROPS}
                   >
                     <Material
                       type={opponentPlayerMaterial}
@@ -79,11 +85,9 @@ export const Board = () => {
             ) : (
               <AnimatedRow
                 key="material-selector"
-                initial={{ scale: 0 }}
-                animate={{ scale: 1 }}
-                exit={{ scale: 0 }}
                 className="justify-content-evenly"
                 layout
+                {...SCALE_ANIMATION_PROPS}
               >
                 <MaterialSelector
                   isExpanded={!currentPlayerMaterial}
@@ -105,19 +109,15 @@ export const Board = () => {
                 </p>
               </div>
               <AnimatePresence>
-                <motion.div
+                <m.div
                   className="col-md-12 text-center"
-                  initial={{ scale: 0 }}
-                  animate={{ scale: 1 }}
                   transition={{ delay: 0.25, type: "spring", duration: 0.25 }}
-                  exit={{
-                    scale: 0,
-                  }}
+                  {...SCALE_ANIMATION_PROPS}
                 >
                   <button className="fs-5" onClick={requestRematch}>
                     Rematch?
                   </button>
-                </motion.div>
+                </m.div>
               </AnimatePresence>
             </div>
           </div>

@@ -4,7 +4,7 @@ import { MATERIAL_TYPES } from "constants/material";
 
 import { Col } from "react-bootstrap";
 import { Material } from "components/material";
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence, m } from "framer-motion";
 
 interface MaterialSelectorProps {
   isExpanded: boolean;
@@ -13,7 +13,7 @@ interface MaterialSelectorProps {
 }
 
 const MATERIALS = Object.values(MATERIAL_TYPES),
-  AnimatedCol = motion(Col);
+  AnimatedCol = m(Col);
 
 export const MaterialSelector = ({
   radius,
