@@ -11,9 +11,23 @@ const ModalBody = lazy(() => import("react-bootstrap/ModalBody"));
 export const Rules = memo(() => {
   const [isRulesModalOpen, setIsRulesModalOpen] = useState(false);
 
-  const handleShow = useCallback(() => setIsRulesModalOpen(true), []);
+  const handleShow = useCallback(() => {
+    setIsRulesModalOpen(true);
 
-  const handleClose = useCallback(() => setIsRulesModalOpen(false), []);
+    window.gtag("event", "toolbar_action_open_rules_modal", {
+      event_label: "Toolbar Action",
+      event_category: "toolbar",
+    });
+  }, []);
+
+  const handleClose = useCallback(() => {
+    setIsRulesModalOpen(false);
+
+    window.gtag("event", "toolbar_action_close_rules_modal", {
+      event_label: "Toolbar Action",
+      event_category: "toolbar",
+    });
+  }, []);
 
   return (
     <>

@@ -45,6 +45,12 @@ export const Volume = memo(() => {
       .set(STORAGE_PREFRENCES_KEYS.AUDIO_ENABLED, !isAudioEnabled)
       .then(() => {
         setIsAudioEnabled(!isAudioEnabled);
+
+        window.gtag("event", "toolbar_action_sound_audio", {
+          event_label: "Toolbar Action",
+          event_category: "toolbar",
+          is_enabled: !isAudioEnabled,
+        });
       });
   }, [isAudioEnabled, setIsAudioEnabled]);
 
@@ -53,6 +59,12 @@ export const Volume = memo(() => {
       .set(STORAGE_PREFRENCES_KEYS.MUSIC_ENABLED, !isMusicEnabled)
       .then(() => {
         setIsMusicEnabled(!isMusicEnabled);
+
+        window.gtag("event", "toolbar_action_sound_music", {
+          event_label: "Toolbar Action",
+          event_category: "toolbar",
+          is_enabled: !isMusicEnabled,
+        });
       });
   }, [isMusicEnabled, setIsMusicEnabled]);
 

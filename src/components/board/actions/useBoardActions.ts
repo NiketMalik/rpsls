@@ -45,6 +45,12 @@ export const useBoardActions = () => {
     (materialType: MATERIAL_TYPES) => {
       playMaterialClick();
       setCurrentPlayerMaterial(materialType);
+
+      window.gtag("event", "game_action_material_select", {
+        event_label: "Game Action",
+        event_category: "material_select",
+        material: materialType,
+      });
     },
     [playMaterialClick],
   );
@@ -64,6 +70,11 @@ export const useBoardActions = () => {
   });
 
   const handleRematch = useCallback(() => {
+    window.gtag("event", "game_action_request_rematch", {
+      event_label: "Game Action",
+      event_category: "rematch",
+    });
+
     return requestRematch().then((accepted) => {
       if (accepted) {
         setCurrentPlayerMaterial(undefined);
@@ -112,6 +123,13 @@ export const useBoardActions = () => {
     } else {
       playOnLose();
     }
+
+    window.gtag("event", "game_action_match_result", {
+      event_label: "Game Action",
+      event_category: "result",
+      non_interaction: true,
+      result: currentRoundResult,
+    });
   }, [currentRoundResult, playOnWin, playOnLose]);
 
   const state = useMemo(() => {
