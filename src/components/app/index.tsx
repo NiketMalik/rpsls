@@ -3,6 +3,7 @@ import React from "react";
 import { Hero } from "components/hero";
 import { Board } from "components/board";
 import { Toolbar } from "components/toolbar";
+import { Toast } from "components/toast";
 
 import { AppContainer } from "./styles";
 
@@ -16,6 +17,7 @@ export const App = () => {
         <Board />
       </AppContainer>
       <Toolbar />
+      <Toast />
     </>
   );
 };

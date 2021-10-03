@@ -6,6 +6,7 @@ import { App } from "../";
 jest.mock("components/hero", () => ({ Hero: () => null }));
 jest.mock("components/board", () => ({ Board: () => null }));
 jest.mock("components/toolbar", () => ({ Toolbar: () => null }));
+jest.mock("components/toast", () => ({ Toast: () => null }));
 
 describe("App", () => {
   it("renders without error", () => {

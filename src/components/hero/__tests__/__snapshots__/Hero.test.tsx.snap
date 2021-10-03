@@ -13,7 +13,7 @@ exports[`Hero renders without error 1`] = `
         class="col"
       >
         <h1
-          class="text-center display-3"
+          class="text-center display-3 font-cursive"
         >
           Rock, Paper, Scissors, Lizard, Spock
         </h1>
@@ -22,7 +22,7 @@ exports[`Hero renders without error 1`] = `
         class="col"
       >
         <h2
-          class="text-center h4"
+          class="text-center h4 font-cursive"
         >
           Online dispute resolution the traditional way, from the relative safety of your computer.
         </h2>

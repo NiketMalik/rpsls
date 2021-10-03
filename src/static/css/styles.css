@@ -22,7 +22,9 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
-  --bs-font-sans-serif: "Indie Flower", cursive;
+  --bs-font-sans-serif: system-ui, -apple-system, Segoe UI, Roboto, Helvetica,
+    Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+  --bs-font-cursive: "Indie Flower", cursive;
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
     "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(
@@ -55,6 +57,10 @@ body {
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   overflow-x: hidden;
+}
+
+.font-cursive {
+  font-family: var(--bs-font-cursive);
 }
 
 hr {
@@ -2648,6 +2654,55 @@ fieldset:disabled .btn {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   border-radius: 0.2rem;
+}
+
+.btn-close,
+.close {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 1em;
+  height: 1em;
+  padding: 0.25em;
+  color: #1e2022;
+  background: transparent
+    url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%231e2022'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e")
+    50%/1em auto no-repeat;
+  border: 0;
+  border-radius: 0.25rem;
+  opacity: 0.5;
+}
+
+.btn-close:hover,
+.close:hover {
+  color: #1e2022;
+  text-decoration: none;
+  opacity: 0.75;
+}
+
+.btn-close:focus,
+.close:focus {
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(79, 198, 112, 0.25);
+  box-shadow: 0 0 0 0.25rem rgba(79, 198, 112, 0.25);
+  opacity: 1;
+}
+
+.btn-close.disabled,
+.btn-close:disabled,
+.close.disabled,
+.close:disabled {
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  opacity: 0.25;
+}
+
+.btn-close-white {
+  -webkit-filter: invert(1) grayscale(100%) brightness(200%);
+  filter: invert(1) grayscale(100%) brightness(200%);
 }
 
 .toast {

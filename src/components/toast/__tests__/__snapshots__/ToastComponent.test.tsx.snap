@@ -1,0 +1,234 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Toast auto hides toast 1`] = `
+<div>
+  <div
+    aria-atomic="true"
+    aria-live="polite"
+    class="css-1fgetv3"
+    data-testid="toast-wrapper"
+  >
+    <div
+      class="d-flex flex-column align-items-end me-4 css-1rcgvyn"
+    />
+  </div>
+</div>
+`;
+
+exports[`Toast does not auto hides toast 1`] = `
+<div>
+  <div
+    aria-atomic="true"
+    aria-live="polite"
+    class="css-1fgetv3"
+    data-testid="toast-wrapper"
+  >
+    <div
+      class="d-flex flex-column align-items-end me-4 css-1rcgvyn"
+    >
+      <div
+        style="opacity: 0;"
+      >
+        <div
+          aria-atomic="true"
+          aria-live="assertive"
+          class="fade toast bg-secondary css-x1oxl4 show"
+          data-testid="toast"
+          role="alert"
+        >
+          <div
+            class="toast-header"
+          >
+            <strong
+              class="me-auto"
+            >
+              test
+            </strong>
+            <button
+              aria-label="Close"
+              class="btn-close me-2 m-auto"
+              data-bs-dismiss="toast"
+              data-testid="toast-close-action"
+              type="button"
+            />
+          </div>
+          <div
+            class="d-flex fs-5 toast-body"
+          >
+            <div
+              class="flex-grow-1"
+            >
+              test
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Toast renders accent danger toast 1`] = `
+<div>
+  <div
+    aria-atomic="true"
+    aria-live="polite"
+    class="css-1fgetv3"
+    data-testid="toast-wrapper"
+  >
+    <div
+      class="d-flex flex-column align-items-end me-4 css-1rcgvyn"
+    >
+      <div
+        style="opacity: 0;"
+      >
+        <div
+          aria-atomic="true"
+          aria-live="assertive"
+          class="fade toast bg-danger css-x1oxl4 show"
+          data-testid="toast"
+          role="alert"
+        >
+          <div
+            class="toast-header text-white"
+          >
+            <strong
+              class="me-auto"
+            >
+              test
+            </strong>
+            <button
+              aria-label="Close"
+              class="btn-close me-2 m-auto btn-close-white"
+              data-bs-dismiss="toast"
+              data-testid="toast-close-action"
+              type="button"
+            />
+          </div>
+          <div
+            class="d-flex fs-5 text-white toast-body"
+          >
+            <div
+              class="flex-grow-1"
+            >
+              test
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Toast renders basic toast 1`] = `
+<div>
+  <div
+    aria-atomic="true"
+    aria-live="polite"
+    class="css-1fgetv3"
+    data-testid="toast-wrapper"
+  >
+    <div
+      class="d-flex flex-column align-items-end me-4 css-1rcgvyn"
+    >
+      <div
+        style="opacity: 0;"
+      >
+        <div
+          aria-atomic="true"
+          aria-live="assertive"
+          class="fade toast bg-secondary css-x1oxl4 show"
+          data-testid="toast"
+          role="alert"
+        >
+          <div
+            class="d-flex fs-5 toast-body"
+          >
+            <div
+              class="flex-grow-1"
+            >
+              test
+            </div>
+            <button
+              aria-label="Close"
+              class="btn-close me-2 m-auto"
+              data-bs-dismiss="toast"
+              data-testid="toast-close-action"
+              type="button"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Toast renders toast with header 1`] = `
+<div>
+  <div
+    aria-atomic="true"
+    aria-live="polite"
+    class="css-1fgetv3"
+    data-testid="toast-wrapper"
+  >
+    <div
+      class="d-flex flex-column align-items-end me-4 css-1rcgvyn"
+    >
+      <div
+        style="opacity: 0;"
+      >
+        <div
+          aria-atomic="true"
+          aria-live="assertive"
+          class="fade toast bg-secondary css-x1oxl4 show"
+          data-testid="toast"
+          role="alert"
+        >
+          <div
+            class="toast-header"
+          >
+            <strong
+              class="me-auto"
+            >
+              test-header
+            </strong>
+            <button
+              aria-label="Close"
+              class="btn-close me-2 m-auto"
+              data-bs-dismiss="toast"
+              data-testid="toast-close-action"
+              type="button"
+            />
+          </div>
+          <div
+            class="d-flex fs-5 toast-body"
+          >
+            <div
+              class="flex-grow-1"
+            >
+              test
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Toast renders without error 1`] = `
+<div>
+  <div
+    aria-atomic="true"
+    aria-live="polite"
+    class="css-1fgetv3"
+    data-testid="toast-wrapper"
+  >
+    <div
+      class="d-flex flex-column align-items-end me-4 css-1rcgvyn"
+    />
+  </div>
+</div>
+`;

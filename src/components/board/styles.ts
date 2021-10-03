@@ -7,8 +7,10 @@ import boardImage from "static/images/board.png";
 export const BoardContainer = styled(Container)`
   position: relative;
   max-width: 1220px;
+  min-height: 85vh;
 
-  @media (min-width: 1200px) {
+  @media (min-width: 767px) {
+    min-height: 70vh;
     height: 70vh;
     width: auto;
   }

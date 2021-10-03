@@ -45,7 +45,11 @@ export const Board = () => {
     : DEFAULT_RADIUS;
 
   return (
-    <BoardContainer fluid className="p-5 mt-md-4" data-testid="board">
+    <BoardContainer
+      fluid
+      className="p-5 mt-md-4 d-flex flex-column"
+      data-testid="board"
+    >
       <Row className="row flex-grow-1 align-items-center">
         <Col md={12}>
           <AnimatePresence exitBeforeEnter>
@@ -101,7 +105,7 @@ export const Board = () => {
           </AnimatePresence>
         </Col>
       </Row>
-      <div className="row py-4">
+      <div className="row py-4 font-cursive">
         {currentRoundResult ? (
           <div className="col-md-12 d-flex align-items-center justify-content-center">
             <div className="row">
