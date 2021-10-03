@@ -7,7 +7,10 @@ import { ToolbarContainer } from "./styles";
 
 export const Toolbar = () => {
   return (
-    <ToolbarContainer className="d-flex align-items-center justify-content-center justify-content-md-end">
+    <ToolbarContainer
+      className="d-flex align-items-center justify-content-center justify-content-md-end"
+      data-testid="toolbar"
+    >
       <Rules />
       <Volume />
     </ToolbarContainer>

@@ -1,0 +1,125 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Rules modal actions should close modal on click outside 1`] = `
+<div>
+  <button
+    aria-label="rules"
+    class="btn btn-trasnparent"
+    data-testid="rules-modal-trigger"
+    type="button"
+  >
+    <img
+      alt="rules"
+      class=""
+      height="32"
+      src="icon-instructions.svg"
+      width="32"
+    />
+  </button>
+</div>
+`;
+
+exports[`Rules modal actions should open modal on trigger open 1`] = `
+<div
+  class="modal-dialog"
+  data-testid="rules-modal"
+>
+  <div
+    class="modal-content"
+  />
+</div>
+`;
+
+exports[`Rules modal actions should open modal on trigger open 2`] = `
+<div
+  class="modal-dialog"
+  data-testid="rules-modal"
+>
+  <div
+    class="modal-content"
+  >
+    <div
+      class="modal-body"
+      data-testid="rules-modal-content"
+    >
+      <div
+        class="d-flex flex-column align-items-center"
+      >
+        <div
+          class="display-6"
+        >
+          Rules
+        </div>
+        <img
+          alt="rules"
+          class="p-4 img-fluid"
+          src="rules.svg"
+          width="100%"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Rules modal actions should open modal on trigger open 3`] = `
+<div
+  class="modal-body"
+  data-testid="rules-modal-content"
+>
+  <div
+    class="d-flex flex-column align-items-center"
+  >
+    <div
+      class="display-6"
+    >
+      Rules
+    </div>
+    <img
+      alt="rules"
+      class="p-4 img-fluid"
+      src="rules.svg"
+      width="100%"
+    />
+  </div>
+</div>
+`;
+
+exports[`Rules renders without error 1`] = `
+<div>
+  <button
+    aria-label="rules"
+    class="btn btn-trasnparent"
+    data-testid="rules-modal-trigger"
+    type="button"
+  >
+    <img
+      alt="rules"
+      class=""
+      height="32"
+      src="icon-instructions.svg"
+      width="32"
+    />
+  </button>
+  <div />
+</div>
+`;
+
+exports[`Rules tooltip actions should show tooltip 1`] = `
+<div
+  class="fade show tooltip bs-tooltip-top"
+  data-testid="rules-modal-trigger-tooltip"
+  id="toolbar-rules-tooltip"
+  role="tooltip"
+  x-placement="top"
+>
+  <div
+    class="tooltip-arrow"
+  />
+  <div
+    class="tooltip-inner"
+  >
+    Game rules
+  </div>
+</div>
+`;

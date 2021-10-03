@@ -1,0 +1,1048 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Board game actions outcomes draw 1`] = `
+<div>
+  <div
+    class="p-5 mt-md-4 css-1wcfgrf container-fluid"
+    data-testid="board"
+  >
+    <div
+      class="row flex-grow-1 align-items-center row"
+    >
+      <div
+        class="col-md-12"
+      >
+        <div
+          class="px-md-5 row"
+          data-testid="current-player-selection"
+          style="opacity: 0;"
+        >
+          <div
+            class="d-flex align-items-center justify-content-center mt-5 mt-md-0 col-md-6"
+            style="transform: scale(0) translateZ(0);"
+          >
+            <button
+              aria-label="ROCK"
+              class="css-2yxi51-MaterialContainer ec4hnvt1"
+              data-disabled="false"
+              data-is-highlited="true"
+              data-testid="material"
+              radius="75"
+            >
+              <img
+                alt="ROCK"
+                class="css-stx9by-MaterialImage ec4hnvt0"
+                data-testid="material-image"
+                src="material-rock.svg"
+              />
+              <div
+                class="css-1nc6hb2-MaterialHighlight ec4hnvt2"
+                data-testid="material-highlight"
+              />
+            </button>
+          </div>
+          <div
+            class="d-flex align-items-center justify-content-center mt-5 mt-md-0 col-md-6"
+            data-testid="opponent-player-selection"
+            style="transform: scale(0) translateZ(0);"
+          >
+            <button
+              class="css-plyvl0-MaterialContainer ec4hnvt1"
+              data-disabled="true"
+              data-is-highlited="false"
+              data-testid="material"
+              radius="75"
+            >
+              <div
+                class="css-1nc6hb2-MaterialHighlight ec4hnvt2"
+                data-testid="material-highlight"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="row py-4"
+    >
+      <div
+        class="col-md-6 d-none d-md-flex align-items-center justify-content-center"
+      >
+        <p
+          class="display-5 my-2"
+        >
+          Your move
+        </p>
+      </div>
+      <div
+        class="col-md-6 d-flex align-items-center justify-content-center"
+      >
+        <p
+          class="display-5 my-2"
+        >
+          waiting...
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Board game actions outcomes draw 2`] = `
+<div>
+  <div
+    class="p-5 mt-md-4 css-1wcfgrf container-fluid"
+    data-testid="board"
+  >
+    <div
+      class="row flex-grow-1 align-items-center row"
+    >
+      <div
+        class="col-md-12"
+      >
+        <div
+          class="px-md-5 row"
+          data-testid="current-player-selection"
+          style="opacity: 0;"
+        >
+          <div
+            class="d-flex align-items-center justify-content-center mt-5 mt-md-0 col-md-6"
+            style="transform: scale(0) translateZ(0);"
+          >
+            <button
+              aria-label="ROCK"
+              class="css-2yxi51-MaterialContainer ec4hnvt1"
+              data-disabled="true"
+              data-is-highlited="true"
+              data-testid="material"
+              radius="75"
+            >
+              <img
+                alt="ROCK"
+                class="css-stx9by-MaterialImage ec4hnvt0"
+                data-testid="material-image"
+                src="material-rock.svg"
+              />
+              <div
+                class="css-1nc6hb2-MaterialHighlight ec4hnvt2"
+                data-testid="material-highlight"
+              />
+            </button>
+          </div>
+          <div
+            class="d-flex align-items-center justify-content-center mt-5 mt-md-0 col-md-6"
+            data-testid="opponent-player-selection"
+            style="transform: scale(0) translateZ(0);"
+          >
+            <button
+              aria-label="ROCK"
+              class="css-2yxi51-MaterialContainer ec4hnvt1"
+              data-disabled="true"
+              data-is-highlited="true"
+              data-testid="material"
+              radius="75"
+            >
+              <img
+                alt="ROCK"
+                class="css-stx9by-MaterialImage ec4hnvt0"
+                data-testid="material-image"
+                src="material-rock.svg"
+              />
+              <div
+                class="css-1nc6hb2-MaterialHighlight ec4hnvt2"
+                data-testid="material-highlight"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="row py-4"
+    >
+      <div
+        class="col-md-12 d-flex align-items-center justify-content-center"
+      >
+        <div
+          class="row"
+        >
+          <div
+            class="col-md-12 text-center"
+          >
+            <p
+              class="display-5 my-2"
+            >
+              It's a draw!
+            </p>
+          </div>
+          <div
+            class="col-md-12 text-center"
+            style="transform: scale(0) translateZ(0);"
+          >
+            <button
+              class="fs-5"
+              data-testid="rematch"
+            >
+              Rematch?
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Board game actions outcomes lose 1`] = `
+<div>
+  <div
+    class="p-5 mt-md-4 css-1wcfgrf container-fluid"
+    data-testid="board"
+  >
+    <div
+      class="row flex-grow-1 align-items-center row"
+    >
+      <div
+        class="col-md-12"
+      >
+        <div
+          class="px-md-5 row"
+          data-testid="current-player-selection"
+          style="opacity: 0;"
+        >
+          <div
+            class="d-flex align-items-center justify-content-center mt-5 mt-md-0 col-md-6"
+            style="transform: scale(0) translateZ(0);"
+          >
+            <button
+              aria-label="ROCK"
+              class="css-2yxi51-MaterialContainer ec4hnvt1"
+              data-disabled="false"
+              data-is-highlited="true"
+              data-testid="material"
+              radius="75"
+            >
+              <img
+                alt="ROCK"
+                class="css-stx9by-MaterialImage ec4hnvt0"
+                data-testid="material-image"
+                src="material-rock.svg"
+              />
+              <div
+                class="css-1nc6hb2-MaterialHighlight ec4hnvt2"
+                data-testid="material-highlight"
+              />
+            </button>
+          </div>
+          <div
+            class="d-flex align-items-center justify-content-center mt-5 mt-md-0 col-md-6"
+            data-testid="opponent-player-selection"
+            style="transform: scale(0) translateZ(0);"
+          >
+            <button
+              class="css-plyvl0-MaterialContainer ec4hnvt1"
+              data-disabled="true"
+              data-is-highlited="false"
+              data-testid="material"
+              radius="75"
+            >
+              <div
+                class="css-1nc6hb2-MaterialHighlight ec4hnvt2"
+                data-testid="material-highlight"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="row py-4"
+    >
+      <div
+        class="col-md-6 d-none d-md-flex align-items-center justify-content-center"
+      >
+        <p
+          class="display-5 my-2"
+        >
+          Your move
+        </p>
+      </div>
+      <div
+        class="col-md-6 d-flex align-items-center justify-content-center"
+      >
+        <p
+          class="display-5 my-2"
+        >
+          waiting...
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Board game actions outcomes lose 2`] = `
+<div>
+  <div
+    class="p-5 mt-md-4 css-1wcfgrf container-fluid"
+    data-testid="board"
+  >
+    <div
+      class="row flex-grow-1 align-items-center row"
+    >
+      <div
+        class="col-md-12"
+      >
+        <div
+          class="px-md-5 row"
+          data-testid="current-player-selection"
+          style="opacity: 0;"
+        >
+          <div
+            class="d-flex align-items-center justify-content-center mt-5 mt-md-0 col-md-6"
+            style="transform: scale(0) translateZ(0);"
+          >
+            <button
+              aria-label="ROCK"
+              class="css-2yxi51-MaterialContainer ec4hnvt1"
+              data-disabled="true"
+              data-is-highlited="false"
+              data-testid="material"
+              radius="75"
+            >
+              <img
+                alt="ROCK"
+                class="css-stx9by-MaterialImage ec4hnvt0"
+                data-testid="material-image"
+                src="material-rock.svg"
+              />
+              <div
+                class="css-1nc6hb2-MaterialHighlight ec4hnvt2"
+                data-testid="material-highlight"
+              />
+            </button>
+          </div>
+          <div
+            class="d-flex align-items-center justify-content-center mt-5 mt-md-0 col-md-6"
+            data-testid="opponent-player-selection"
+            style="transform: scale(0) translateZ(0);"
+          >
+            <button
+              aria-label="PAPER"
+              class="css-q0eb4r-MaterialContainer ec4hnvt1"
+              data-disabled="true"
+              data-is-highlited="true"
+              data-testid="material"
+              radius="75"
+            >
+              <img
+                alt="PAPER"
+                class="css-stx9by-MaterialImage ec4hnvt0"
+                data-testid="material-image"
+                src="material-paper.svg"
+              />
+              <div
+                class="css-1nc6hb2-MaterialHighlight ec4hnvt2"
+                data-testid="material-highlight"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="row py-4"
+    >
+      <div
+        class="col-md-12 d-flex align-items-center justify-content-center"
+      >
+        <div
+          class="row"
+        >
+          <div
+            class="col-md-12 text-center"
+          >
+            <p
+              class="display-5 my-2"
+            >
+              You lost...
+            </p>
+          </div>
+          <div
+            class="col-md-12 text-center"
+            style="transform: scale(0) translateZ(0);"
+          >
+            <button
+              class="fs-5"
+              data-testid="rematch"
+            >
+              Rematch?
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Board game actions outcomes win 1`] = `
+<div>
+  <div
+    class="p-5 mt-md-4 css-1wcfgrf container-fluid"
+    data-testid="board"
+  >
+    <div
+      class="row flex-grow-1 align-items-center row"
+    >
+      <div
+        class="col-md-12"
+      >
+        <div
+          class="px-md-5 row"
+          data-testid="current-player-selection"
+          style="opacity: 0;"
+        >
+          <div
+            class="d-flex align-items-center justify-content-center mt-5 mt-md-0 col-md-6"
+            style="transform: scale(0) translateZ(0);"
+          >
+            <button
+              aria-label="ROCK"
+              class="css-2yxi51-MaterialContainer ec4hnvt1"
+              data-disabled="false"
+              data-is-highlited="true"
+              data-testid="material"
+              radius="75"
+            >
+              <img
+                alt="ROCK"
+                class="css-stx9by-MaterialImage ec4hnvt0"
+                data-testid="material-image"
+                src="material-rock.svg"
+              />
+              <div
+                class="css-1nc6hb2-MaterialHighlight ec4hnvt2"
+                data-testid="material-highlight"
+              />
+            </button>
+          </div>
+          <div
+            class="d-flex align-items-center justify-content-center mt-5 mt-md-0 col-md-6"
+            data-testid="opponent-player-selection"
+            style="transform: scale(0) translateZ(0);"
+          >
+            <button
+              class="css-plyvl0-MaterialContainer ec4hnvt1"
+              data-disabled="true"
+              data-is-highlited="false"
+              data-testid="material"
+              radius="75"
+            >
+              <div
+                class="css-1nc6hb2-MaterialHighlight ec4hnvt2"
+                data-testid="material-highlight"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="row py-4"
+    >
+      <div
+        class="col-md-6 d-none d-md-flex align-items-center justify-content-center"
+      >
+        <p
+          class="display-5 my-2"
+        >
+          Your move
+        </p>
+      </div>
+      <div
+        class="col-md-6 d-flex align-items-center justify-content-center"
+      >
+        <p
+          class="display-5 my-2"
+        >
+          waiting...
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Board game actions outcomes win 2`] = `
+<div>
+  <div
+    class="p-5 mt-md-4 css-1wcfgrf container-fluid"
+    data-testid="board"
+  >
+    <div
+      class="row flex-grow-1 align-items-center row"
+    >
+      <div
+        class="col-md-12"
+      >
+        <div
+          class="px-md-5 row"
+          data-testid="current-player-selection"
+          style="opacity: 0;"
+        >
+          <div
+            class="d-flex align-items-center justify-content-center mt-5 mt-md-0 col-md-6"
+            style="transform: scale(0) translateZ(0);"
+          >
+            <button
+              aria-label="ROCK"
+              class="css-2yxi51-MaterialContainer ec4hnvt1"
+              data-disabled="true"
+              data-is-highlited="true"
+              data-testid="material"
+              radius="75"
+            >
+              <img
+                alt="ROCK"
+                class="css-stx9by-MaterialImage ec4hnvt0"
+                data-testid="material-image"
+                src="material-rock.svg"
+              />
+              <div
+                class="css-1nc6hb2-MaterialHighlight ec4hnvt2"
+                data-testid="material-highlight"
+              />
+            </button>
+          </div>
+          <div
+            class="d-flex align-items-center justify-content-center mt-5 mt-md-0 col-md-6"
+            data-testid="opponent-player-selection"
+            style="transform: scale(0) translateZ(0);"
+          >
+            <button
+              aria-label="SCISSOR"
+              class="css-1j75alj-MaterialContainer ec4hnvt1"
+              data-disabled="true"
+              data-is-highlited="false"
+              data-testid="material"
+              radius="75"
+            >
+              <img
+                alt="SCISSOR"
+                class="css-stx9by-MaterialImage ec4hnvt0"
+                data-testid="material-image"
+                src="material-scissor.svg"
+              />
+              <div
+                class="css-1nc6hb2-MaterialHighlight ec4hnvt2"
+                data-testid="material-highlight"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="row py-4"
+    >
+      <div
+        class="col-md-12 d-flex align-items-center justify-content-center"
+      >
+        <div
+          class="row"
+        >
+          <div
+            class="col-md-12 text-center"
+          >
+            <p
+              class="display-5 my-2"
+            >
+              You won!
+            </p>
+          </div>
+          <div
+            class="col-md-12 text-center"
+            style="transform: scale(0) translateZ(0);"
+          >
+            <button
+              class="fs-5"
+              data-testid="rematch"
+            >
+              Rematch?
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Board game actions post game rematch 1`] = `
+<div>
+  <div
+    class="p-5 mt-md-4 css-1wcfgrf container-fluid"
+    data-testid="board"
+  >
+    <div
+      class="row flex-grow-1 align-items-center row"
+    >
+      <div
+        class="col-md-12"
+      >
+        <div
+          class="justify-content-evenly row-cols-auto row"
+          style="transform: scale(0) translateZ(0);"
+        >
+          <div
+            class="d-flex justify-content-center m-2 m-md-4 col-md-4"
+            style="opacity: 0; transform: scale(0) translateZ(0);"
+          >
+            <button
+              aria-label="ROCK"
+              class="css-1ui2vtv-MaterialContainer ec4hnvt1"
+              data-disabled="false"
+              data-is-highlited="false"
+              data-testid="material"
+              radius="60"
+            >
+              <img
+                alt="ROCK"
+                class="css-stx9by-MaterialImage ec4hnvt0"
+                data-testid="material-image"
+                src="material-rock.svg"
+              />
+              <div
+                class="css-1nc6hb2-MaterialHighlight ec4hnvt2"
+                data-testid="material-highlight"
+              />
+            </button>
+          </div>
+          <div
+            class="d-flex justify-content-center m-2 m-md-4 col-md-4"
+            style="opacity: 0; transform: scale(0) translateZ(0);"
+          >
+            <button
+              aria-label="PAPER"
+              class="css-uzsmmi-MaterialContainer ec4hnvt1"
+              data-disabled="false"
+              data-is-highlited="false"
+              data-testid="material"
+              radius="60"
+            >
+              <img
+                alt="PAPER"
+                class="css-stx9by-MaterialImage ec4hnvt0"
+                data-testid="material-image"
+                src="material-paper.svg"
+              />
+              <div
+                class="css-1nc6hb2-MaterialHighlight ec4hnvt2"
+                data-testid="material-highlight"
+              />
+            </button>
+          </div>
+          <div
+            class="d-flex justify-content-center m-2 m-md-4 col-md-4"
+            style="opacity: 0; transform: scale(0) translateZ(0);"
+          >
+            <button
+              aria-label="SCISSOR"
+              class="css-919jtz-MaterialContainer ec4hnvt1"
+              data-disabled="false"
+              data-is-highlited="false"
+              data-testid="material"
+              radius="60"
+            >
+              <img
+                alt="SCISSOR"
+                class="css-stx9by-MaterialImage ec4hnvt0"
+                data-testid="material-image"
+                src="material-scissor.svg"
+              />
+              <div
+                class="css-1nc6hb2-MaterialHighlight ec4hnvt2"
+                data-testid="material-highlight"
+              />
+            </button>
+          </div>
+          <div
+            class="d-flex justify-content-center m-2 m-md-4 col-md-4"
+            style="opacity: 0; transform: scale(0) translateZ(0);"
+          >
+            <button
+              aria-label="LIZARD"
+              class="css-9k3u6a-MaterialContainer ec4hnvt1"
+              data-disabled="false"
+              data-is-highlited="false"
+              data-testid="material"
+              radius="60"
+            >
+              <img
+                alt="LIZARD"
+                class="css-stx9by-MaterialImage ec4hnvt0"
+                data-testid="material-image"
+                src="material-lizard.svg"
+              />
+              <div
+                class="css-1nc6hb2-MaterialHighlight ec4hnvt2"
+                data-testid="material-highlight"
+              />
+            </button>
+          </div>
+          <div
+            class="d-flex justify-content-center m-2 m-md-4 col-md-4"
+            style="opacity: 0; transform: scale(0) translateZ(0);"
+          >
+            <button
+              aria-label="SPOCK"
+              class="css-44liza-MaterialContainer ec4hnvt1"
+              data-disabled="false"
+              data-is-highlited="false"
+              data-testid="material"
+              radius="60"
+            >
+              <img
+                alt="SPOCK"
+                class="css-stx9by-MaterialImage ec4hnvt0"
+                data-testid="material-image"
+                src="material-spock.svg"
+              />
+              <div
+                class="css-1nc6hb2-MaterialHighlight ec4hnvt2"
+                data-testid="material-highlight"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="row py-4"
+    >
+      <div
+        class="col-md-12 d-flex align-items-center justify-content-center"
+      >
+        <p
+          class="display-5 my-2"
+        >
+          Your turn
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Board renders without error on desktop 1`] = `
+<div>
+  <div
+    class="p-5 mt-md-4 css-1wcfgrf container-fluid"
+    data-testid="board"
+  >
+    <div
+      class="row flex-grow-1 align-items-center row"
+    >
+      <div
+        class="col-md-12"
+      >
+        <div
+          class="justify-content-evenly row-cols-auto row"
+          style="transform: scale(0) translateZ(0);"
+        >
+          <div
+            class="d-flex justify-content-center m-2 m-md-4 col-md-4"
+            style="opacity: 0; transform: scale(0) translateZ(0);"
+          >
+            <button
+              aria-label="ROCK"
+              class="css-1ui2vtv-MaterialContainer ec4hnvt1"
+              data-disabled="false"
+              data-is-highlited="false"
+              data-testid="material"
+              radius="60"
+            >
+              <img
+                alt="ROCK"
+                class="css-stx9by-MaterialImage ec4hnvt0"
+                data-testid="material-image"
+                src="material-rock.svg"
+              />
+              <div
+                class="css-1nc6hb2-MaterialHighlight ec4hnvt2"
+                data-testid="material-highlight"
+              />
+            </button>
+          </div>
+          <div
+            class="d-flex justify-content-center m-2 m-md-4 col-md-4"
+            style="opacity: 0; transform: scale(0) translateZ(0);"
+          >
+            <button
+              aria-label="PAPER"
+              class="css-uzsmmi-MaterialContainer ec4hnvt1"
+              data-disabled="false"
+              data-is-highlited="false"
+              data-testid="material"
+              radius="60"
+            >
+              <img
+                alt="PAPER"
+                class="css-stx9by-MaterialImage ec4hnvt0"
+                data-testid="material-image"
+                src="material-paper.svg"
+              />
+              <div
+                class="css-1nc6hb2-MaterialHighlight ec4hnvt2"
+                data-testid="material-highlight"
+              />
+            </button>
+          </div>
+          <div
+            class="d-flex justify-content-center m-2 m-md-4 col-md-4"
+            style="opacity: 0; transform: scale(0) translateZ(0);"
+          >
+            <button
+              aria-label="SCISSOR"
+              class="css-919jtz-MaterialContainer ec4hnvt1"
+              data-disabled="false"
+              data-is-highlited="false"
+              data-testid="material"
+              radius="60"
+            >
+              <img
+                alt="SCISSOR"
+                class="css-stx9by-MaterialImage ec4hnvt0"
+                data-testid="material-image"
+                src="material-scissor.svg"
+              />
+              <div
+                class="css-1nc6hb2-MaterialHighlight ec4hnvt2"
+                data-testid="material-highlight"
+              />
+            </button>
+          </div>
+          <div
+            class="d-flex justify-content-center m-2 m-md-4 col-md-4"
+            style="opacity: 0; transform: scale(0) translateZ(0);"
+          >
+            <button
+              aria-label="LIZARD"
+              class="css-9k3u6a-MaterialContainer ec4hnvt1"
+              data-disabled="false"
+              data-is-highlited="false"
+              data-testid="material"
+              radius="60"
+            >
+              <img
+                alt="LIZARD"
+                class="css-stx9by-MaterialImage ec4hnvt0"
+                data-testid="material-image"
+                src="material-lizard.svg"
+              />
+              <div
+                class="css-1nc6hb2-MaterialHighlight ec4hnvt2"
+                data-testid="material-highlight"
+              />
+            </button>
+          </div>
+          <div
+            class="d-flex justify-content-center m-2 m-md-4 col-md-4"
+            style="opacity: 0; transform: scale(0) translateZ(0);"
+          >
+            <button
+              aria-label="SPOCK"
+              class="css-44liza-MaterialContainer ec4hnvt1"
+              data-disabled="false"
+              data-is-highlited="false"
+              data-testid="material"
+              radius="60"
+            >
+              <img
+                alt="SPOCK"
+                class="css-stx9by-MaterialImage ec4hnvt0"
+                data-testid="material-image"
+                src="material-spock.svg"
+              />
+              <div
+                class="css-1nc6hb2-MaterialHighlight ec4hnvt2"
+                data-testid="material-highlight"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="row py-4"
+    >
+      <div
+        class="col-md-12 d-flex align-items-center justify-content-center"
+      >
+        <p
+          class="display-5 my-2"
+        >
+          Your turn
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Board renders without error on mobile 1`] = `
+<div>
+  <div
+    class="p-5 mt-md-4 css-1wcfgrf container-fluid"
+    data-testid="board"
+  >
+    <div
+      class="row flex-grow-1 align-items-center row"
+    >
+      <div
+        class="col-md-12"
+      >
+        <div
+          class="justify-content-evenly row-cols-auto row"
+          style="transform: scale(0) translateZ(0);"
+        >
+          <div
+            class="d-flex justify-content-center m-2 m-md-4 col-md-4"
+            style="opacity: 0; transform: scale(0) translateZ(0);"
+          >
+            <button
+              aria-label="ROCK"
+              class="css-ymd0dq-MaterialContainer ec4hnvt1"
+              data-disabled="false"
+              data-is-highlited="false"
+              data-testid="material"
+              radius="30"
+            >
+              <img
+                alt="ROCK"
+                class="css-stx9by-MaterialImage ec4hnvt0"
+                data-testid="material-image"
+                src="material-rock.svg"
+              />
+              <div
+                class="css-1nc6hb2-MaterialHighlight ec4hnvt2"
+                data-testid="material-highlight"
+              />
+            </button>
+          </div>
+          <div
+            class="d-flex justify-content-center m-2 m-md-4 col-md-4"
+            style="opacity: 0; transform: scale(0) translateZ(0);"
+          >
+            <button
+              aria-label="PAPER"
+              class="css-6i8iyy-MaterialContainer ec4hnvt1"
+              data-disabled="false"
+              data-is-highlited="false"
+              data-testid="material"
+              radius="30"
+            >
+              <img
+                alt="PAPER"
+                class="css-stx9by-MaterialImage ec4hnvt0"
+                data-testid="material-image"
+                src="material-paper.svg"
+              />
+              <div
+                class="css-1nc6hb2-MaterialHighlight ec4hnvt2"
+                data-testid="material-highlight"
+              />
+            </button>
+          </div>
+          <div
+            class="d-flex justify-content-center m-2 m-md-4 col-md-4"
+            style="opacity: 0; transform: scale(0) translateZ(0);"
+          >
+            <button
+              aria-label="SCISSOR"
+              class="css-1ev0chy-MaterialContainer ec4hnvt1"
+              data-disabled="false"
+              data-is-highlited="false"
+              data-testid="material"
+              radius="30"
+            >
+              <img
+                alt="SCISSOR"
+                class="css-stx9by-MaterialImage ec4hnvt0"
+                data-testid="material-image"
+                src="material-scissor.svg"
+              />
+              <div
+                class="css-1nc6hb2-MaterialHighlight ec4hnvt2"
+                data-testid="material-highlight"
+              />
+            </button>
+          </div>
+          <div
+            class="d-flex justify-content-center m-2 m-md-4 col-md-4"
+            style="opacity: 0; transform: scale(0) translateZ(0);"
+          >
+            <button
+              aria-label="LIZARD"
+              class="css-zpc36-MaterialContainer ec4hnvt1"
+              data-disabled="false"
+              data-is-highlited="false"
+              data-testid="material"
+              radius="30"
+            >
+              <img
+                alt="LIZARD"
+                class="css-stx9by-MaterialImage ec4hnvt0"
+                data-testid="material-image"
+                src="material-lizard.svg"
+              />
+              <div
+                class="css-1nc6hb2-MaterialHighlight ec4hnvt2"
+                data-testid="material-highlight"
+              />
+            </button>
+          </div>
+          <div
+            class="d-flex justify-content-center m-2 m-md-4 col-md-4"
+            style="opacity: 0; transform: scale(0) translateZ(0);"
+          >
+            <button
+              aria-label="SPOCK"
+              class="css-1nzgg3o-MaterialContainer ec4hnvt1"
+              data-disabled="false"
+              data-is-highlited="false"
+              data-testid="material"
+              radius="30"
+            >
+              <img
+                alt="SPOCK"
+                class="css-stx9by-MaterialImage ec4hnvt0"
+                data-testid="material-image"
+                src="material-spock.svg"
+              />
+              <div
+                class="css-1nc6hb2-MaterialHighlight ec4hnvt2"
+                data-testid="material-highlight"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="row py-4"
+    >
+      <div
+        class="col-md-12 d-flex align-items-center justify-content-center"
+      >
+        <p
+          class="display-5 my-2"
+        >
+          Your turn
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;

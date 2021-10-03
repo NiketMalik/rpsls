@@ -1,0 +1,126 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MaterialSelector renders without error 1`] = `
+<div>
+  <div
+    class="d-flex justify-content-center m-2 m-md-4 col-md-4"
+    style="opacity: 0; transform: scale(0) translateZ(0);"
+  >
+    <button
+      aria-label="ROCK"
+      class="css-3gmqhb-MaterialContainer ec4hnvt1"
+      data-disabled="false"
+      data-is-highlited="false"
+      data-testid="material"
+      radius="100"
+    >
+      <img
+        alt="ROCK"
+        class="css-stx9by-MaterialImage ec4hnvt0"
+        data-testid="material-image"
+        src="material-rock.svg"
+      />
+      <div
+        class="css-1nc6hb2-MaterialHighlight ec4hnvt2"
+        data-testid="material-highlight"
+      />
+    </button>
+  </div>
+  <div
+    class="d-flex justify-content-center m-2 m-md-4 col-md-4"
+    style="opacity: 0; transform: scale(0) translateZ(0);"
+  >
+    <button
+      aria-label="PAPER"
+      class="css-1hp7zwx-MaterialContainer ec4hnvt1"
+      data-disabled="false"
+      data-is-highlited="false"
+      data-testid="material"
+      radius="100"
+    >
+      <img
+        alt="PAPER"
+        class="css-stx9by-MaterialImage ec4hnvt0"
+        data-testid="material-image"
+        src="material-paper.svg"
+      />
+      <div
+        class="css-1nc6hb2-MaterialHighlight ec4hnvt2"
+        data-testid="material-highlight"
+      />
+    </button>
+  </div>
+  <div
+    class="d-flex justify-content-center m-2 m-md-4 col-md-4"
+    style="opacity: 0; transform: scale(0) translateZ(0);"
+  >
+    <button
+      aria-label="SCISSOR"
+      class="css-1l31af5-MaterialContainer ec4hnvt1"
+      data-disabled="false"
+      data-is-highlited="false"
+      data-testid="material"
+      radius="100"
+    >
+      <img
+        alt="SCISSOR"
+        class="css-stx9by-MaterialImage ec4hnvt0"
+        data-testid="material-image"
+        src="material-scissor.svg"
+      />
+      <div
+        class="css-1nc6hb2-MaterialHighlight ec4hnvt2"
+        data-testid="material-highlight"
+      />
+    </button>
+  </div>
+  <div
+    class="d-flex justify-content-center m-2 m-md-4 col-md-4"
+    style="opacity: 0; transform: scale(0) translateZ(0);"
+  >
+    <button
+      aria-label="LIZARD"
+      class="css-1fa8azu-MaterialContainer ec4hnvt1"
+      data-disabled="false"
+      data-is-highlited="false"
+      data-testid="material"
+      radius="100"
+    >
+      <img
+        alt="LIZARD"
+        class="css-stx9by-MaterialImage ec4hnvt0"
+        data-testid="material-image"
+        src="material-lizard.svg"
+      />
+      <div
+        class="css-1nc6hb2-MaterialHighlight ec4hnvt2"
+        data-testid="material-highlight"
+      />
+    </button>
+  </div>
+  <div
+    class="d-flex justify-content-center m-2 m-md-4 col-md-4"
+    style="opacity: 0; transform: scale(0) translateZ(0);"
+  >
+    <button
+      aria-label="SPOCK"
+      class="css-bj4oie-MaterialContainer ec4hnvt1"
+      data-disabled="false"
+      data-is-highlited="false"
+      data-testid="material"
+      radius="100"
+    >
+      <img
+        alt="SPOCK"
+        class="css-stx9by-MaterialImage ec4hnvt0"
+        data-testid="material-image"
+        src="material-spock.svg"
+      />
+      <div
+        class="css-1nc6hb2-MaterialHighlight ec4hnvt2"
+        data-testid="material-highlight"
+      />
+    </button>
+  </div>
+</div>
+`;

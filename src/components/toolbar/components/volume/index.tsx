@@ -85,7 +85,11 @@ export const Volume = memo(() => {
       <OverlayTrigger
         placement="top"
         overlay={(props) => (
-          <Tooltip id="toolbar-audio-tooltip" {...props}>
+          <Tooltip
+            id="toolbar-audio-tooltip"
+            {...props}
+            data-testid="audio-tooltip"
+          >
             {isAudioEnabled ? "Disable" : "Enable"} game audio
           </Tooltip>
         )}
@@ -94,6 +98,7 @@ export const Volume = memo(() => {
           variant="transparent"
           aria-label="audio"
           onClick={handleAudioClick}
+          data-testid="audio-trigger"
         >
           <Image
             width="32"
@@ -106,7 +111,11 @@ export const Volume = memo(() => {
       <OverlayTrigger
         placement="top"
         overlay={(props) => (
-          <Tooltip id="toolbar-music-tooltip" {...props}>
+          <Tooltip
+            id="toolbar-music-tooltip"
+            {...props}
+            data-testid="music-tooltip"
+          >
             {isMusicEnabled ? "Disable" : "Enable"} game music
           </Tooltip>
         )}
@@ -115,6 +124,7 @@ export const Volume = memo(() => {
           variant="transparent"
           aria-label="music"
           onClick={handleMusicClick}
+          data-testid="music-trigger"
         >
           <Image
             width="28"

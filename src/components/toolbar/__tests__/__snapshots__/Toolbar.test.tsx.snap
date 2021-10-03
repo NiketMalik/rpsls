@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Toolbar renders without error 1`] = `
+<div>
+  <div
+    class="d-flex align-items-center justify-content-center justify-content-md-end css-4nq16i"
+    data-testid="toolbar"
+  />
+</div>
+`;

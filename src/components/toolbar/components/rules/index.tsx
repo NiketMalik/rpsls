@@ -20,12 +20,21 @@ export const Rules = memo(() => {
       <OverlayTrigger
         placement="top"
         overlay={(props) => (
-          <Tooltip id="toolbar-rules-tooltip" {...props}>
+          <Tooltip
+            id="toolbar-rules-tooltip"
+            {...props}
+            data-testid="rules-modal-trigger-tooltip"
+          >
             Game rules
           </Tooltip>
         )}
       >
-        <Button variant="trasnparent" aria-label="rules" onClick={handleShow}>
+        <Button
+          variant="trasnparent"
+          aria-label="rules"
+          onClick={handleShow}
+          data-testid="rules-modal-trigger"
+        >
           <Image width="32" height="32" src={instructionsIcon} alt="rules" />
         </Button>
       </OverlayTrigger>
@@ -36,8 +45,9 @@ export const Rules = memo(() => {
           show={isRulesModalOpen}
           onHide={handleClose}
           keyboard={true}
+          data-testid="rules-modal"
         >
-          <ModalBody>
+          <ModalBody data-testid="rules-modal-content">
             <div className="d-flex flex-column align-items-center">
               <div className="display-6">Rules</div>
               <Image

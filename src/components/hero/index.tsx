@@ -4,7 +4,7 @@ import { Container, Row, Col } from "react-bootstrap";
 
 export const Hero = () => {
   return (
-    <Container>
+    <Container data-testid="hero">
       <Row className="flex-column">
         <Col>
           <h1 className="text-center display-3">

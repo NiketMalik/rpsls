@@ -1,0 +1,119 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Volume button actions should disable audio 1`] = `
+<div
+  class="fade show tooltip bs-tooltip-top"
+  data-testid="audio-tooltip"
+  id="toolbar-audio-tooltip"
+  role="tooltip"
+  x-placement="top"
+>
+  <div
+    class="tooltip-arrow"
+  />
+  <div
+    class="tooltip-inner"
+  >
+    Enable
+     game audio
+  </div>
+</div>
+`;
+
+exports[`Volume button actions should disable audio 2`] = `
+<div
+  class="fade show tooltip bs-tooltip-top"
+  data-popper-escaped="true"
+  data-popper-placement="top"
+  data-popper-reference-hidden="true"
+  data-testid="audio-tooltip"
+  id="toolbar-audio-tooltip"
+  role="tooltip"
+  style="position: absolute; bottom: 0px; left: 0px; transform: translate(0px, 0px);"
+  x-placement="top"
+>
+  <div
+    class="tooltip-arrow"
+    style="position: absolute; left: 0px; transform: translate(0px, 0px);"
+  />
+  <div
+    class="tooltip-inner"
+  >
+    Enable
+     game audio
+  </div>
+</div>
+`;
+
+exports[`Volume renders without error 1`] = `
+<div>
+  <button
+    aria-label="audio"
+    class="btn btn-transparent"
+    data-testid="audio-trigger"
+    type="button"
+  >
+    <img
+      alt="audio volume"
+      class=""
+      height="32"
+      src="icon-volume-mute.svg"
+      width="32"
+    />
+  </button>
+  <button
+    aria-label="music"
+    class="btn btn-transparent"
+    data-testid="music-trigger"
+    type="button"
+  >
+    <img
+      alt="music volume"
+      class=""
+      height="28"
+      src="icon-audio-mute.svg"
+      width="28"
+    />
+  </button>
+</div>
+`;
+
+exports[`Volume tooltip actions should show tooltip for audio 1`] = `
+<div
+  class="fade show tooltip bs-tooltip-top"
+  data-testid="audio-tooltip"
+  id="toolbar-audio-tooltip"
+  role="tooltip"
+  x-placement="top"
+>
+  <div
+    class="tooltip-arrow"
+  />
+  <div
+    class="tooltip-inner"
+  >
+    Enable
+     game audio
+  </div>
+</div>
+`;
+
+exports[`Volume tooltip actions should show tooltip for music 1`] = `
+<div
+  class="fade show tooltip bs-tooltip-top"
+  data-testid="music-tooltip"
+  id="toolbar-music-tooltip"
+  role="tooltip"
+  x-placement="top"
+>
+  <div
+    class="tooltip-arrow"
+  />
+  <div
+    class="tooltip-inner"
+  >
+    Enable
+     game music
+  </div>
+</div>
+`;

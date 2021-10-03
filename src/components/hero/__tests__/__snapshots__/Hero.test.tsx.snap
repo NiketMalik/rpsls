@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Hero renders without error 1`] = `
+<div>
+  <div
+    class="container"
+    data-testid="hero"
+  >
+    <div
+      class="flex-column row"
+    >
+      <div
+        class="col"
+      >
+        <h1
+          class="text-center display-3"
+        >
+          Rock, Paper, Scissors, Lizard, Spock
+        </h1>
+      </div>
+      <div
+        class="col"
+      >
+        <h2
+          class="text-center h4"
+        >
+          Online dispute resolution the traditional way, from the relative safety of your computer.
+        </h2>
+      </div>
+    </div>
+  </div>
+</div>
+`;

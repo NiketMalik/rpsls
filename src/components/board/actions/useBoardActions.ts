@@ -64,7 +64,7 @@ export const useBoardActions = () => {
   });
 
   const handleRematch = useCallback(() => {
-    requestRematch().then((accepted) => {
+    return requestRematch().then((accepted) => {
       if (accepted) {
         setCurrentPlayerMaterial(undefined);
         setOpponentPlayerMaterial(undefined);

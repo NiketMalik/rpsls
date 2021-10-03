@@ -1,0 +1,172 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Material renders material types without error 1`] = `
+<div>
+  <button
+    aria-label="ROCK"
+    class="css-1ui2vtv-MaterialContainer ec4hnvt1"
+    data-disabled="false"
+    data-is-highlited="false"
+    data-testid="material"
+    radius="60"
+  >
+    <img
+      alt="ROCK"
+      class="css-stx9by-MaterialImage ec4hnvt0"
+      data-testid="material-image"
+      src="material-rock.svg"
+    />
+    <div
+      class="css-1nc6hb2-MaterialHighlight ec4hnvt2"
+      data-testid="material-highlight"
+    />
+  </button>
+</div>
+`;
+
+exports[`Material renders material types without error 2`] = `
+<div>
+  <button
+    aria-label="PAPER"
+    class="css-uzsmmi-MaterialContainer ec4hnvt1"
+    data-disabled="false"
+    data-is-highlited="false"
+    data-testid="material"
+    radius="60"
+  >
+    <img
+      alt="PAPER"
+      class="css-stx9by-MaterialImage ec4hnvt0"
+      data-testid="material-image"
+      src="material-paper.svg"
+    />
+    <div
+      class="css-1nc6hb2-MaterialHighlight ec4hnvt2"
+      data-testid="material-highlight"
+    />
+  </button>
+</div>
+`;
+
+exports[`Material renders material types without error 3`] = `
+<div>
+  <button
+    aria-label="SCISSOR"
+    class="css-919jtz-MaterialContainer ec4hnvt1"
+    data-disabled="false"
+    data-is-highlited="false"
+    data-testid="material"
+    radius="60"
+  >
+    <img
+      alt="SCISSOR"
+      class="css-stx9by-MaterialImage ec4hnvt0"
+      data-testid="material-image"
+      src="material-scissor.svg"
+    />
+    <div
+      class="css-1nc6hb2-MaterialHighlight ec4hnvt2"
+      data-testid="material-highlight"
+    />
+  </button>
+</div>
+`;
+
+exports[`Material renders material types without error 4`] = `
+<div>
+  <button
+    aria-label="LIZARD"
+    class="css-9k3u6a-MaterialContainer ec4hnvt1"
+    data-disabled="false"
+    data-is-highlited="false"
+    data-testid="material"
+    radius="60"
+  >
+    <img
+      alt="LIZARD"
+      class="css-stx9by-MaterialImage ec4hnvt0"
+      data-testid="material-image"
+      src="material-lizard.svg"
+    />
+    <div
+      class="css-1nc6hb2-MaterialHighlight ec4hnvt2"
+      data-testid="material-highlight"
+    />
+  </button>
+</div>
+`;
+
+exports[`Material renders material types without error 5`] = `
+<div>
+  <button
+    aria-label="SPOCK"
+    class="css-44liza-MaterialContainer ec4hnvt1"
+    data-disabled="false"
+    data-is-highlited="false"
+    data-testid="material"
+    radius="60"
+  >
+    <img
+      alt="SPOCK"
+      class="css-stx9by-MaterialImage ec4hnvt0"
+      data-testid="material-image"
+      src="material-spock.svg"
+    />
+    <div
+      class="css-1nc6hb2-MaterialHighlight ec4hnvt2"
+      data-testid="material-highlight"
+    />
+  </button>
+</div>
+`;
+
+exports[`Material renders with given redius 1`] = `
+<div>
+  <button
+    class="css-1c4hhev-MaterialContainer ec4hnvt1"
+    data-disabled="true"
+    data-is-highlited="false"
+    data-testid="material"
+    radius="500"
+  >
+    <div
+      class="css-1nc6hb2-MaterialHighlight ec4hnvt2"
+      data-testid="material-highlight"
+    />
+  </button>
+</div>
+`;
+
+exports[`Material renders with highlight 1`] = `
+<div>
+  <button
+    class="css-14jmf8d-MaterialContainer ec4hnvt1"
+    data-disabled="true"
+    data-is-highlited="true"
+    data-testid="material"
+    radius="60"
+  >
+    <div
+      class="css-1nc6hb2-MaterialHighlight ec4hnvt2"
+      data-testid="material-highlight"
+    />
+  </button>
+</div>
+`;
+
+exports[`Material renders without error 1`] = `
+<div>
+  <button
+    class="css-14jmf8d-MaterialContainer ec4hnvt1"
+    data-disabled="true"
+    data-is-highlited="false"
+    data-testid="material"
+    radius="60"
+  >
+    <div
+      class="css-1nc6hb2-MaterialHighlight ec4hnvt2"
+      data-testid="material-highlight"
+    />
+  </button>
+</div>
+`;

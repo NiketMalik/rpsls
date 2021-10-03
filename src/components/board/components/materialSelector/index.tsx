@@ -7,7 +7,6 @@ import { Material } from "components/material";
 import { AnimatePresence, m } from "framer-motion";
 
 interface MaterialSelectorProps {
-  isExpanded: boolean;
   radius: number;
   onSelect?: (materialType: MATERIAL_TYPES) => void;
 }

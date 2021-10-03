@@ -45,7 +45,7 @@ export const Board = () => {
     : DEFAULT_RADIUS;
 
   return (
-    <BoardContainer fluid className="p-5 mt-md-4">
+    <BoardContainer fluid className="p-5 mt-md-4" data-testid="board">
       <Row className="row flex-grow-1 align-items-center">
         <Col md={12}>
           <AnimatePresence exitBeforeEnter>
@@ -54,6 +54,7 @@ export const Board = () => {
                 key="play"
                 className="px-md-5"
                 {...OPACITY_ANIMATION_PROPS}
+                data-testid="current-player-selection"
               >
                 <AnimatedCol
                   md={6}
@@ -72,6 +73,7 @@ export const Board = () => {
                     md={6}
                     className="d-flex align-items-center justify-content-center mt-5 mt-md-0"
                     {...SCALE_ANIMATION_PROPS}
+                    data-testid="opponent-player-selection"
                   >
                     <Material
                       type={opponentPlayerMaterial}
@@ -85,14 +87,14 @@ export const Board = () => {
             ) : (
               <AnimatedRow
                 key="material-selector"
-                className="justify-content-evenly"
+                className="justify-content-evenly row-cols-auto"
                 layout
                 {...SCALE_ANIMATION_PROPS}
               >
                 <MaterialSelector
-                  isExpanded={!currentPlayerMaterial}
                   radius={materialRadius}
                   onSelect={onCurrentPlayerMaterialSelect}
+                  data-testid="material-selector"
                 />
               </AnimatedRow>
             )}
@@ -114,7 +116,11 @@ export const Board = () => {
                   transition={{ delay: 0.25, type: "spring", duration: 0.25 }}
                   {...SCALE_ANIMATION_PROPS}
                 >
-                  <button className="fs-5" onClick={requestRematch}>
+                  <button
+                    className="fs-5"
+                    onClick={requestRematch}
+                    data-testid="rematch"
+                  >
                     Rematch?
                   </button>
                 </m.div>
@@ -123,7 +129,7 @@ export const Board = () => {
           </div>
         ) : currentPlayerMaterial ? (
           <>
-            <div className="col-md-6 d-flex align-items-center justify-content-center">
+            <div className="col-md-6 d-none d-md-flex align-items-center justify-content-center">
               <p className="display-5 my-2">Your move</p>
             </div>
             <div className="col-md-6 d-flex align-items-center justify-content-center">
