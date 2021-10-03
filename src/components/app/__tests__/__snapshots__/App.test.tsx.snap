@@ -3,7 +3,7 @@
 exports[`App renders without error 1`] = `
 <div>
   <div
-    class="p-5 py-3 py-md-5"
+    class="p-5 py-3 py-md-5 css-cpnos0"
     data-testid="app"
   />
 </div>
