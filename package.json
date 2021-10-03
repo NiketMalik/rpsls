@@ -36,6 +36,7 @@
     "@types/react": "^17.0.26",
     "@types/react-dom": "^17.0.0",
     "babel-plugin-jsx-remove-data-test-id": "^3.0.0",
+    "pre-push": "^0.1.1",
     "react-scripts": "4.0.3",
     "typescript": "^4.1.2"
   },
@@ -71,10 +72,10 @@
     ],
     "coverageThreshold": {
       "global": {
-        "branches": 0,
-        "functions": 0,
-        "lines": 0,
-        "statements": 0
+        "branches": 100,
+        "functions": 100,
+        "lines": 100,
+        "statements": 100
       }
     },
     "collectCoverageFrom": [
@@ -82,5 +83,8 @@
       "!src/index.tsx",
       "!src/test-utils.tsx"
     ]
-  }
+  },
+  "pre-push": [
+    "coverage"
+  ]
 }

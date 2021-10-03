@@ -1,3 +1,4 @@
+[![codecov](https://img.shields.io/codecov/c/github/NiketMalik/rpsls?style=for-the-badge&token=TQGHTPDAHI)](https://codecov.io/gh/NiketMalik/rpsls)
 [![Issues](https://img.shields.io/github/issues/NiketMalik/rpsls.svg?style=for-the-badge)](https://github.com/NiketMalik/rpsls/issues)
 [![MIT License](https://img.shields.io/github/license/NiketMalik/rpsls.svg?style=for-the-badge)](https://github.com/NiketMalik/rpsls/LICENSE.md)
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555)](http://linkedin.com/in/niketmalik)
