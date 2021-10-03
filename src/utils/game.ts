@@ -20,13 +20,11 @@ export const getResult = (
 export const getResultText = (result: WIN_OUTCOME_TYPES) => {
   if (result === WIN_OUTCOME_TYPES.DRAW) {
     return "It's a draw!";
-  }
-
-  if (result === WIN_OUTCOME_TYPES.CURRENT) {
+  } else if (result === WIN_OUTCOME_TYPES.CURRENT) {
     return "You won!";
-  }
-
-  if (result === WIN_OUTCOME_TYPES.OPPONENT) {
+  } else if (result === WIN_OUTCOME_TYPES.OPPONENT) {
     return "You lost...";
+  } else {
+    throw new Error("GameUtils: Invalid result outcome.");
   }
 };

@@ -1,5 +1,5 @@
 import { FC, ReactElement } from "react";
-import { render, RenderOptions, act } from "@testing-library/react";
+import { render, RenderOptions } from "@testing-library/react";
 import { THEME } from "constants/theme";
 
 import { StoreProvider } from "context/storeContext";
