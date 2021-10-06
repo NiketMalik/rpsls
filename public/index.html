@@ -45,6 +45,57 @@
       href="https://fonts.googleapis.com/css2?family=Indie+Flower:wght@400;500&display=swap"
       rel="stylesheet"
     />
+    <script type="application/ld+json">
+      [
+        {
+          "@context": "http://www.schema.org",
+          "@type": "WebSite",
+          "name": "RPSLS - Rock, Paper, Scissors, Lizard, Spock",
+          "alternateName": "RPSLS",
+          "url": "https://rpsls.niketmalik.com"
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "Game",
+          "audience": {
+            "@type": "PeopleAudience",
+            "suggestedMinAge": "8"
+          },
+          "description": "Online dispute resolution the traditional way, from the relative safety of your computer.",
+          "gameItem": ["5 game materials"],
+          "numberOfPlayers": {
+            "@type": "QuantitativeValue",
+            "minValue": "1",
+            "maxValue": "2"
+          },
+          "copyrightHolder": {
+            "@context": "https://schema.org/",
+            "@type": "Person",
+            "name": "Niket Malik",
+            "url": "niketmalik@gmail.com",
+            "image": "https://avatars.githubusercontent.com/u/7395089?v=4",
+            "sameAs": [
+              "https://github.com/NiketMalik",
+              "http://linkedin.com/in/niketmalik"
+            ]
+          }
+        }
+      ]
+    </script>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-N6T8KS8");
+    </script>
+    <!-- End Google Tag Manager -->
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
@@ -58,12 +109,17 @@
     </script>
   </head>
   <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-N6T8KS8"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=%REACT_APP_GTAG_ID%"
-    ></script>
   </body>
 </html>
